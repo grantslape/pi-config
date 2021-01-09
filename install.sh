@@ -11,7 +11,7 @@ sudo apt-get install zsh git docker docker-compose vim -y
 chsh -s /bin/zsh
 
 # Install Oh-my-zsh in script mode
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # cp over .zshrc
 cp zshrc ~/.zshrc
