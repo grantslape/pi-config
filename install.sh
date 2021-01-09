@@ -10,6 +10,9 @@ sudo apt-get install zsh git docker docker-compose vim -y
 # Set shell to zsh
 chsh -s /bin/zsh
 
+# Remove oh-my-zsh if exists
+if [ -d "~/.oh-my-zsh" ]; then rm -rf "~/.oh-my-zsh"; fi
+
 # Install Oh-my-zsh in script mode
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
@@ -24,3 +27,6 @@ cp p10k.zsh ~/.p10k.zsh
 
 # cp vimrc
 cp vimrc ~/.vimrc
+
+# re init zsh
+env zsh
