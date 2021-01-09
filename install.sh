@@ -2,10 +2,10 @@
 
 # Run script with sudo
 # Upgrade
-apt-get update && apt-get upgrade -y
+sudo apt-get update && sudo apt-get upgrade -y
 
 # Install basics
-apt-get install zsh git docker docker-compose vim -y
+sudo apt-get install zsh git docker docker-compose vim -y
 
 # Set shell to zsh
 chsh -s /bin/zsh
