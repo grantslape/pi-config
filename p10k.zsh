@@ -1573,7 +1573,7 @@
 
   #####################################[ wifi: wifi speed ]#####################################
   # WiFi color.
-  typeset -g POWERLEVEL9K_WIFI_FOREGROUND=0
+  typeset -g POWERLEVEL9K_WIFI_FOREGROUND=15
   typeset -g POWERLEVEL9K_WIFI_BACKGROUND=4
   # Custom icon.
   # typeset -g POWERLEVEL9K_WIFI_VISUAL_IDENTIFIER_EXPANSION='⭐'

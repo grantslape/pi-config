@@ -75,7 +75,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose )
+plugins=(git docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,6 +85,7 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -93,6 +94,9 @@ export LANG=en_US.UTF-8
 #   export EDITOR='mvim'
 # fi
 export EDITOR='vim'
+
+# Shim path
+export PATH="$PATH:/sbin"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
