@@ -28,8 +28,8 @@ echo "Installing oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # cp over .zshrc
-echo "Copying .zshrc..."
-cp zshrc $HOME/.zshrc
+echo "Linking .zshrc..."
+ln -s zshrc $HOME/.zshrc
 
 # ZSH plugins
 echo "Installing ZSH plugins..."
@@ -41,12 +41,12 @@ echo "Install p10k..."
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # cp p10k.zsh
-echo "copy p10k config..."
-cp p10k.zsh $HOME/.p10k.zsh
+echo "Linking p10k config..."
+ln -s p10k.zsh $HOME/.p10k.zsh
 
 # cp vimrc
-echo "copy .vimrc..."
-cp vimrc $HOME/.vimrc
+echo "Linking .vimrc..."
+ln -s vimrc $HOME/.vimrc
 
 # re init zsh
 env zsh
