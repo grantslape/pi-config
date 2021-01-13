@@ -29,7 +29,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # cp over .zshrc
 echo "Linking .zshrc..."
-ln -s zshrc $HOME/.zshrc
+ln -sf $PWD/zshrc $HOME/.zshrc
 
 # ZSH plugins
 echo "Installing ZSH plugins..."
@@ -42,11 +42,11 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 # cp p10k.zsh
 echo "Linking p10k config..."
-ln -s p10k.zsh $HOME/.p10k.zsh
+ln -sf $PWD/p10k.zsh $HOME/.p10k.zsh
 
 # cp vimrc
 echo "Linking .vimrc..."
-ln -s vimrc $HOME/.vimrc
+ln -sf $PWD/vimrc $HOME/.vimrc
 
 # re init zsh
 env zsh
